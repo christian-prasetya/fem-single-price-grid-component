@@ -1,0 +1,20 @@
+:root {
+  --clr-primary-cyan: hsl(179, 62%, 43%);
+  --clr-primary-brightYellow: hsl(71, 73%, 54%);
+  --clr-primary-lightCyan: hsl(179, 47%, 52%);
+
+  --clr-neutral-lightGray: hsl(204, 43%, 93%);
+  --clr-neutral-grayishBlue: hsl(218, 22%, 67%);
+}
+
+$bg-primary: var(--clr-neutral-grayishBlue);
+$bg-secondary: var(--clr-neutral-lightGray);
+$bg-tertiary: var(--clr-primary-cyan);
+$bg-light: var(--clr-primary-lightCyan);
+
+$clr-primary: var(--clr-neutral-lightGray);
+$clr-secondary: var(--clr-primary-cyan);
+$clr-tertiary: var(--clr-neutral-grayishBlue);
+$clr-accent: var(--clr-primary-brightYellow);
+
+$btn-primary: var(--clr-primary-brightYellow);

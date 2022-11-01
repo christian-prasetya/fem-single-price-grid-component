@@ -1,0 +1,190 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+/* Set core body defaults */
+body {
+  text-rendering: optimizeSpeed;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+*::before,
+*::after {
+    -webkit-animation-duration: 0.01ms !important;
+            animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+:root {
+  --clr-primary-cyan: hsl(179, 62%, 43%);
+  --clr-primary-brightYellow: hsl(71, 73%, 54%);
+  --clr-primary-lightCyan: hsl(179, 47%, 52%);
+  --clr-neutral-lightGray: hsl(204, 43%, 93%);
+  --clr-neutral-grayishBlue: hsl(218, 22%, 67%);
+}
+
+body {
+  background-color: var(--clr-neutral-grayishBlue);
+  font-family: "Karla", sans-serif;
+  font-size: 1rem;
+  color: var(--clr-neutral-lightGray);
+}
+body main {
+  margin: 4.75rem auto;
+  width: 19.4375rem;
+}
+@media (min-width: 56.25em) {
+  body main {
+    margin: 10.1875rem auto;
+    width: 39.625rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+  }
+}
+body main .content-container {
+  background-color: var(--clr-neutral-lightGray);
+  padding: 1.5rem;
+  color: var(--clr-neutral-grayishBlue);
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+}
+@media (min-width: 56.25em) {
+  body main .content-container {
+    grid-column: 1/3;
+  }
+}
+body main .content-container h1 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: -1%;
+  color: var(--clr-primary-cyan);
+  margin-bottom: 1.75rem;
+}
+body main .content-container .subtitle {
+  letter-spacing: -1.9%;
+  font-weight: 700;
+  line-height: 125%;
+  color: var(--clr-primary-brightYellow);
+  margin-bottom: 1.5625rem;
+}
+body main .content-container p {
+  font-size: 0.875rem;
+  letter-spacing: -1%;
+  line-height: 185%;
+}
+body main .price-container {
+  background-color: var(--clr-primary-cyan);
+  padding: 1.5rem;
+}
+@media (min-width: 56.25em) {
+  body main .price-container {
+    border-bottom-left-radius: 0.25rem;
+  }
+}
+body main .price-container h2 {
+  font-size: 1.125rem;
+  font-weight: 700;
+  letter-spacing: -1%;
+  margin-bottom: 1.375rem;
+}
+body main .price-container .price {
+  display: flex;
+  align-items: center;
+  gap: 0.6875rem;
+  margin-bottom: 0.9375rem;
+}
+body main .price-container .price h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: -1%;
+  margin: 0;
+}
+body main .price-container .price p {
+  font-size: 1rem;
+  letter-spacing: -1%;
+  opacity: 0.5;
+}
+body main .price-container .full-access {
+  margin-bottom: 2.0625rem;
+}
+body main .price-container button {
+  width: 16.4375rem;
+  height: 3rem;
+  background-color: var(--clr-primary-brightYellow);
+  box-shadow: 0 0 0.5rem 0.125rem hsla(0deg, 0%, 40%, 0.25);
+  letter-spacing: -1%;
+  border: none;
+  border-radius: 0.25rem;
+  color: var(--clr-neutral-lightGray);
+}
+body main .why-us-container {
+  background-color: var(--clr-primary-lightCyan);
+  padding: 1.5rem;
+  border-bottom-left-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
+}
+@media (min-width: 56.25em) {
+  body main .why-us-container {
+    border-bottom-left-radius: 0;
+  }
+}
+body main .why-us-container h2 {
+  font-size: 1.125rem;
+  font-weight: 700;
+  letter-spacing: -1%;
+  margin-bottom: 1.375rem;
+}
+body main .why-us-container ul li {
+  font-size: 0.875rem;
+  margin-bottom: 0.5rem;
+  list-style: none;
+}/*# sourceMappingURL=style.css.map */
